@@ -48,6 +48,7 @@
             resources.ApplyResources(this.txtM, "txtM");
             this.txtM.Name = "txtM";
             this.txtM.TextChanged += new System.EventHandler(this.txtM_TextChanged);
+            this.txtM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtM_KeyPress);
             // 
             // label1
             // 
@@ -64,6 +65,7 @@
             resources.ApplyResources(this.txtRate, "txtRate");
             this.txtRate.Name = "txtRate";
             this.txtRate.TextChanged += new System.EventHandler(this.txtRate_TextChanged);
+            this.txtRate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRate_KeyPress);
             // 
             // Form1
             // 

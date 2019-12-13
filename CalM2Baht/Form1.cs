@@ -19,25 +19,7 @@ namespace CalM2Baht
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            try
-            {
-                decimal m = txtM.Text.AsDecimal();
-                decimal r = txtRate.Text.AsDecimal();
-
-                TableForm t = new TableForm(m, r);
-                t.Show();
-            }
-            catch
-            {
-                MessageBox.Show("Please enter only numbers.");
-            }
-            finally
-            {
-                txtM.Text = null;
-                txtRate.Text = null;
-            }
-
-
+            SetDesultData();
         }
 
         private void txtM_TextChanged(object sender, EventArgs e)
@@ -57,6 +39,77 @@ namespace CalM2Baht
                 MessageBox.Show("Please enter only numbers.");
                 //txtM.Text = txtM.Text.Remove(txtM.Text.Length - 1);
                 txtRate.Text = null;
+            }
+        }
+
+        private void TextBoxKeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                //Do something
+                e.Handled = true;
+                SetDesultData();
+            }
+        }
+
+        private void SetDesultData()
+        {
+            try
+            {
+                decimal m = txtM.Text.AsDecimal();
+                decimal r = txtRate.Text.AsDecimal();
+
+                TableForm t = new TableForm(m, r);
+                t.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Please enter M or Baht and Rate!.");
+            }
+            finally
+            {
+                txtM.Text = null;
+                txtRate.Text = null;
+            }
+        }
+
+        //private void txtM_KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Enter)
+        //    {
+        //        //Do something
+        //        e.Handled = true;
+        //        SetDesultData();
+        //    }
+        //}
+
+        //private void txtRate_KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Enter)
+        //    {
+        //        //Do something
+        //        e.Handled = true;
+        //        SetDesultData();
+        //    }
+        //}
+
+        private void txtM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                //Do something
+                e.Handled = true;
+                SetDesultData();
+            }
+        }
+
+        private void txtRate_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                //Do something
+                e.Handled = true;
+                SetDesultData();
             }
         }
     }

@@ -58,7 +58,7 @@
             this.labelBaht.AutoSize = true;
             this.labelBaht.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBaht.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelBaht.Location = new System.Drawing.Point(330, 34);
+            this.labelBaht.Location = new System.Drawing.Point(190, 34);
             this.labelBaht.Name = "labelBaht";
             this.labelBaht.Size = new System.Drawing.Size(0, 25);
             this.labelBaht.TabIndex = 0;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 302);
+            this.ClientSize = new System.Drawing.Size(327, 356);
             this.Controls.Add(this.labelBaht);
             this.Controls.Add(this.labelM);
             this.Controls.Add(this.labelRate);
