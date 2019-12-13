@@ -11,8 +11,7 @@ using System.Windows.Forms;
 namespace CalM2Baht
 {
     public partial class TableForm : Form
-    {
-        
+    {        
         public TableForm(decimal m, decimal r)
         {
             InitializeComponent();
@@ -34,6 +33,16 @@ namespace CalM2Baht
             }
 
             labelRate.Text = "Rate: " + r;
+        }
+
+        private void TableForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Escape)
+            {
+                //Do something
+                e.Handled = true;
+                this.Close();
+            }
         }
     }
 }

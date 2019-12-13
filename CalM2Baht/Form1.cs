@@ -64,7 +64,7 @@ namespace CalM2Baht
             }
             catch
             {
-                MessageBox.Show("Please enter M or Baht and Rate!.");
+                MessageBox.Show("Please enter M or Rate!.");
             }
             finally
             {

@@ -78,6 +78,7 @@
             this.Name = "TableForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Table M2Baht";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TableForm_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

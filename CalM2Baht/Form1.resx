@@ -144,10 +144,10 @@
     <value>4</value>
   </data>
   <data name="txtM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 6</value>
+    <value>63, 6</value>
   </data>
   <data name="txtM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="txtM.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -171,13 +171,13 @@
     <value>12, 9</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 17</value>
+    <value>19, 17</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>M or Baht</value>
+    <value>M</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -219,10 +219,10 @@
     <value>1</value>
   </data>
   <data name="txtRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 34</value>
+    <value>63, 34</value>
   </data>
   <data name="txtRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="txtRate.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
